@@ -1,67 +1,76 @@
 .navbar-content {
-    margin-right: 100px;
+  margin-right: 100px;
 }
 
 #icon {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .button {
-    background-color: #f06c4e;
-    border: none;
+  background-color: #f06c4e;
+  border: none;
 }
 
 #show-food {
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .card {
-    background-color: #f8f7f5;
-    text-align: center;
-    width: 18rem;
-    border: none;
+  background-color: #f8f7f5;
+  text-align: center;
+  width: 18rem;
+  border: none;
 }
 
 #card-content {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
-#ingredients{
-    display: none;
+#ingredients {
+  display: none;
 }
 
 #ingredients img {
-    padding-top: 50px;
-    width: 600px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
+  padding-top: 50px;
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .ingredient-title {
-    padding-top: 25px;
-    font-size: 40px;
+  padding-top: 25px;
+  font-size: 40px;
 }
 
 #ingredients ul li {
-    list-style: square;
+    list-style: none;
+    margin-left: -1.3em;
+}
+
+#ingredients ul li:before {
+  content: "\f14a";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+  color: salmon;
 }
 .back-btn {
-    background: salmon;
-    border: none;
-    padding: 10px 20px;
-    color: white;
+  background: salmon;
+  border: none;
+  padding: 10px 20px;
+  color: white;
 }
 
-
-#error-message{
-    display: none;
-    text-align: center;
+#error-message {
+  display: none;
+  text-align: center;
 }
 .error-text {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  padding: 50px;
 }
