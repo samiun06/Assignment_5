@@ -1,0 +1,66 @@
+.navbar-content {
+    margin-right: 100px;
+}
+
+#icon {
+    margin-left: 100px;
+}
+
+.button {
+    background-color: #f06c4e;
+    border: none;
+}
+
+#show-food {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #f8f7f5;
+    text-align: center;
+    width: 18rem;
+    border: none;
+}
+
+#card-content {
+    padding-top: 10px;
+}
+
+#ingredients{
+    display: none;
+}
+
+#ingredients img {
+    padding-top: 50px;
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ingredient-title {
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+#ingredients ul li {
+    list-style: square;
+}
+.back-btn {
+    background: salmon;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+
+#error-message{
+    display: none;
+    text-align: center;
+}
+.error-text {
+    text-align: center;
+    padding: 50px;
+}
