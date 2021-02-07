@@ -21,6 +21,7 @@ const displayFoodLetter = foodLetter => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${foodLetter}`)
     .then(response => response.json())
     .then(data => showFood(data))
+    .catch(error => console.log(""));
 }
 
 const showFood = data => {
