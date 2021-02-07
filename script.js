@@ -32,6 +32,7 @@ const showFood = data => {
     //Checks if invalid food name is given.
     if (data.meals === null) {
         const errorMessage = document.getElementById("error-message");
+        errorMessage.innerHTML = "";
         const h1 = document.createElement("h1");
         const img = document.createElement("img");
         img.setAttribute("src", "error-search.png");
