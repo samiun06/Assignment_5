@@ -30,9 +30,12 @@ const showFood = data => {
     if (data.meals === null) {
         const errorMessage = document.getElementById("error-message");
         const h1 = document.createElement("h1");
+        const img = document.createElement("img");
+        img.setAttribute("src", "error-search.png");
         h1.innerText = "Sorry. Searched food item not found. Please provide a valid food name";
         h1.className = "error-text";
         errorMessage.appendChild(h1);
+        errorMessage.appendChild(img);
         errorMessage.style.display = "block";
     }
 
