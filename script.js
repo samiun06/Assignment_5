@@ -4,18 +4,18 @@ document.getElementById("search-button").addEventListener("click", () => {
     document.getElementById("show-food").innerHTML = "";
     displayFood(searchedFood.value);
     searchedFood.value = "";
-});
+}); // For searching with name and some parts of name.
 
 searchedFood.addEventListener("input", () =>{
     document.getElementById("show-food").innerHTML = "";
     displayFoodLetter(searchedFood.value);
-});
+});  // For searching with a single letter.
 
 const displayFood = foodName => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${foodName}`)
     .then(response => response.json())
     .then(data => showFood(data))
-}
+} 
 
 const displayFoodLetter = foodLetter => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${foodLetter}`)
@@ -25,6 +25,8 @@ const displayFoodLetter = foodLetter => {
 
 const showFood = data => {
     const foodContainer = document.getElementById("show-food");
+    
+    //Checks if invalid food name is given.
     if (data.meals === null) {
         const errorMessage = document.getElementById("error-message");
         const h1 = document.createElement("h1");
@@ -34,6 +36,7 @@ const showFood = data => {
         errorMessage.style.display = "block";
     }
 
+    // The real function which shows the foods and ingredients.
     else {
         document.getElementById("error-message").style.display = "none";
         data.meals.forEach(food => {
