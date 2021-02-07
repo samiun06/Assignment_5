@@ -2,8 +2,10 @@ const searchedFood = document.getElementById("searched-food");
 
 document.getElementById("search-button").addEventListener("click", () => {
     document.getElementById("show-food").innerHTML = "";
+    if(searchedFood.value != ""){
     displayFood(searchedFood.value);
     searchedFood.value = "";
+    }
 }); // For searching with name and some parts of name.
 
 searchedFood.addEventListener("input", () =>{
