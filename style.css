@@ -11,6 +11,10 @@
   border: none;
 }
 
+.button:focus {
+  box-shadow: none;
+}
+
 #show-food {
   padding-top: 50px;
   display: grid;
@@ -18,7 +22,7 @@
   grid-gap: 20px;
 }
 
-.card {
+.single-food {
   background-color: #f8f7f5;
   text-align: center;
   width: 18rem;
@@ -57,13 +61,17 @@
   display: inline-block;
   margin-left: -1.3em;
   width: 1.3em;
-  color: salmon;
+  color:salmon;
 }
 .back-btn {
   background: salmon;
   border: none;
   padding: 10px 20px;
   color: white;
+}
+
+.back-btn:focus {
+  outline: none;
 }
 
 #error-message {

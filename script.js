@@ -2,7 +2,7 @@ const searchedFood = document.getElementById("searched-food");
 
 document.getElementById("search-button").addEventListener("click", () => {
     document.getElementById("show-food").innerHTML = "";
-    if(searchedFood.value != ""){
+    if(searchedFood.value != "" && searchedFood.value.length > 1){
     displayFood(searchedFood.value);
     searchedFood.value = "";
     }
@@ -48,7 +48,7 @@ const showFood = data => {
         document.getElementById("error-message").style.display = "none";
         data.meals.forEach(food => {
             const singleItem = document.createElement("div");
-            singleItem.className = "card";
+            singleItem.className = "card single-food";
             foodInfo = `
                 <img class="card-img-top" src="${food.strMealThumb}">
                 <h4 id="card-content">${food.strMeal}</h4>
