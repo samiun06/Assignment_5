@@ -83,3 +83,7 @@
   text-align: center;
   padding: 50px;
 }
+
+label {
+  width: 1000px;
+}
